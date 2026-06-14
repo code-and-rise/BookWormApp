@@ -1,0 +1,200 @@
+.content-profile{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.container-title{
+   display: flex;
+   width: 60%;
+}
+
+.container-profileData{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   width: 60%;
+}
+
+.container-profileData-image-and-username{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.container-profileData-image{
+   width: 100px;
+}
+
+.container-profileData-info{
+   display: flex;
+   height: 80px;
+}
+
+.container-profileData-info div:nth-child(odd){
+   width: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.vertical-line{
+   width: 0px;
+   height: 100%;
+   border: 0.5px solid;
+   margin: 0 10px;
+}
+
+.container-change-and-see-reading-list, .container-follow-message-and-see-reading-list, .container-see-all-books-and-all-users{
+   width: 60%;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.container-about-me{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 70%;
+}
+
+.container-written-books{
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   height: 80vh;
+}
+
+.written-books-title{
+   text-align: center;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.container-all-users, .container-all-books{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   overflow-y: scroll;
+   width: 90%;
+}
+
+.all-users, .all-books-rows{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.user, .book-row{
+   display: flex;
+   align-items: center;
+}
+
+
+.book-row>a{
+   width: 90%;
+}
+
+.user-data, .book-data-row{
+   display: flex;
+}
+
+.book-data-row{
+   align-items: center;
+}
+
+.user-data>div{
+   width: 100px;
+}
+
+.book-data-row>div{
+   width: 150px;
+}
+
+.book-data-row>div:first-child, .book-data-row>div:nth-child(2){
+   width: 50px;
+}
+
+.book-data-row>div:nth-child(4){
+   width: 300px;
+}
+
+.user-data>div:last-child{
+   width: 250px;
+}
+
+.user-profile-picture, .book-image-row{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.user-profile-picture img{
+   width: 72px;
+}
+
+.book-image-row img{
+   width: 50px;
+}
+
+.user-name-and-surname-and-dateOfBirth{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 10px;
+}
+
+.book-title-and-published-row{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+
+.book-title-row{
+   text-align: start;
+}
+
+
+.background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+}
+
+.window-user-reading-list, .window-all-books, .window-all-users {
+   background-color: white;
+   padding: 20px;
+   width: 80%;
+   height: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+   position: relative;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   font-family: Helvetica, sans-serif;
+}
+
+.exit {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   font-size: 20px;
+   cursor: pointer;
+}

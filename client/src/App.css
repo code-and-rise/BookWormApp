@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'playfair';
+    src: "./fonts/PlayfairDisplay-VariableFont_wght.ttf"
+  }
+
+body {
+  --bg-main: #f8f8f8; /* Add background color */
+}

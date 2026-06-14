@@ -1,0 +1,156 @@
+.background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+}
+
+.window-rate, .window-book-details {
+   background-color: white;
+   padding: 20px;
+   width: fit-content;
+   height: fit-content;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+   position: relative;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+   font-family: Helvetica, sans-serif;
+}
+
+.exit {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.edit-icon, .delete-icon, .info-icon{
+   display: inline-block;
+}
+
+.edit-icon:hover, .delete-icon:hover, .info-icon:hover{
+   cursor: pointer;
+}
+
+.content{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.container-show-book{
+   display: flex;
+   justify-content: center;
+}
+
+
+.book-image-and-details{
+   width: 70%;
+   display: flex;
+   gap: 30px;
+}
+
+.book-image{
+   width: 30%;
+   height: 100%;
+   border: 0.5px solid;
+}
+
+.book-image img{
+   width: 100%;
+   height: 100%;
+}
+
+.book-details{
+   width: 70%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.book-details-author{
+   display: flex;
+   gap: 20px;
+}
+
+.book-details-reading-status{
+   display: flex;
+   gap: 20px;
+}
+
+.container-book-my-rating{
+   width: 70%;
+}
+
+.container-book-my-rating>div{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.book-my-rating-icons-and-txtrating{
+   display: flex;
+   gap: 20px;
+}
+
+.book-my-rating-icons{
+   display: flex;
+   gap: 10px;
+}
+
+.horizontal-line{
+   background-color: black;
+   display: flex;
+   padding: 1px;
+   width: 70%;
+}
+
+
+.container-book-ratings{
+   width: 70%;
+}
+
+.container-book-ratings{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.book-ratings{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   min-height: 50vh;
+}
+
+.book-rating{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 20px;
+   border-bottom: 0.5px solid;
+}
+
+.book-rating-username-and-stars{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+#textarea-review{
+   resize: none;
+   border: 0.5px solid;
+}
+
